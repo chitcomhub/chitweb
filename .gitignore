@@ -276,3 +276,6 @@ chitweb/media/
 .env
 .envs/*
 !.envs/.local/
+
+**/css/*.min.css
+**/js/*.min.js
