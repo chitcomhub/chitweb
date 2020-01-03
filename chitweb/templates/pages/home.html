@@ -1,1 +1,125 @@
 {% extends "base.html" %}
+{% load static %}
+{% block contentHeader %}Наши специалисты{% endblock contentHeader %}
+{% block content %}
+<div class="block-form">
+    <form>
+        <div class="row holder">
+            <div class="col-md-2 col-sm-12 col-11 block-form-Search">
+                <label>Cпециализация</label>
+                <select>
+                    <option>Любая</option>
+                    <option>Дизайнер</option>
+                    <option>Фронтенд</option>
+                </select>
+            </div>
+            <div class="col-md-2 col-11 block-form-Search">
+                <label class="text-skils">Скилы </label>
+                <input type="" name="" class="skils search-filter">
+                <span>java</span>
+                <span>android</span>
+            </div>
+            <div class="col-md-2 col-11 align-self-center">
+                    <input type="submit" value="Отфильтровать" class="submit-form">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="row body-chitcom justify-content-center">
+    <div class="col-md-3 col-11 user-card">
+        <div class="block-user">
+            <img src="{% static 'images/ninja.png' %}" class="img-user">	
+            <div>
+                <h5>Aзамат Пайтонов</h5>							
+                <p>С детства говорю на змейном и вам советую.</p>
+                <span>Python</span>
+                <span>Android</span>
+            </div>
+        </div>
+        <div class="block-socials">
+            <img src="{% static 'images/social/telegram.png' %}" class="icon-socials">
+            <img src="{% static 'images/social/github.png' %}" class="icon-socials">
+        </div>
+    </div>
+    <div class="col-md-3 col-11 user-card">
+        <div class="block-user">
+            <img src="{% static 'images/ninja.png' %}" class="img-user">	
+            <div>
+                <h5>Aзамат Пайтонов</h5>							
+                <p>С детства говорю на змейном и вам советую.</p>
+                <span>Python</span>
+                <span>Android</span>
+            </div>
+        </div>
+        <div class="block-socials">
+            <img src="{% static 'images/social/telegram.png' %}" class="icon-socials">
+            <img src="{% static 'images/social/github.png' %}" class="icon-socials">
+        </div>
+    </div>
+    <div class="col-md-3 col-11 user-card">
+        <div class="block-user">
+            <img src="{% static 'images/ninja.png' %}" class="img-user">	
+            <div>
+                <h5>Aзамат Пайтонов</h5>							
+                <p>С детства говорю на змейном и вам советую.</p>
+                <span>Python</span>
+                <span>Android</span>
+            </div>
+        </div>
+        <div class="block-socials">
+            <img src="{% static 'images/social/telegram.png' %}" class="icon-socials">
+            <img src="{% static 'images/social/github.png' %}" class="icon-socials">
+        </div>
+    </div>
+    <div class="col-md-3 col-11 user-card">
+        <div class="block-user">
+            <img src="{% static 'images/ninja.png' %}" class="img-user">	
+            <div>
+                <h5>Aзамат Пайтонов</h5>							
+                <p>С детства говорю на змейном и вам советую.</p>
+                <span>Python</span>
+                <span>Android</span>
+            </div>
+        </div>
+        <div class="block-socials">
+            <img src="{% static 'images/social/telegram.png' %}" class="icon-socials">
+            <img src="{% static 'images/social/github.png' %}" class="icon-socials">
+        </div>
+    </div>
+    <div class="col-md-3 col-11 user-card">
+        <div class="block-user">
+            <img src="{% static 'images/ninja.png' %}" class="img-user">		
+            <div>
+                <h5>Aзамат Пайтонов</h5>							
+                <p>С детства говорю на змейном и вам советую.</p>
+                <span>Python</span>
+                <span>Android</span>
+            </div>
+        </div>
+        <div class="block-socials">
+            <img src="{% static 'images/social/telegram.png' %}" class="icon-socials">
+            <img src="{% static 'images/social/github.png' %}" class="icon-socials">
+        </div>
+    </div>
+    <div class="col-md-3 col-11 user-card">
+        <div class="block-user">
+            <img src="{% static 'images/ninja.png' %}" class="img-user">		
+            <div>
+                <h5>Aзамат Пайтонов</h5>							
+                <p>С детства говорю на змейном и вам советую.</p>
+                <span>Python</span>
+                <span>Android</span>
+            </div>
+        </div>
+        <div class="block-socials">
+            <img src="{% static 'images/social/telegram.png' %}" class="icon-socials">
+            <img src="{% static 'images/social/github.png' %}" class="icon-socials">
+        </div>
+    </div>	
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-2 col-12 pagination">
+        <span>Показать еще</span>
+    </div>
+</div>
+{% endblock content %}

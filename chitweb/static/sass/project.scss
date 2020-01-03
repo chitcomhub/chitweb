@@ -35,3 +35,205 @@ $red: #b94a48;
   border-color: $dark-pink;
   color: $red;
 }
+
+.header > div{
+	color: #F0F0F2;
+}
+.header {
+	background-color: #353535;
+}
+.container-fluid{
+	background-color: #f1f1f1;
+}
+.logo-chitweb {
+	padding: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+.logo-chitweb a{
+	letter-spacing: 5px;
+	color: #FFF;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.logo-chitweb a:hover{
+	color: #C0C0C0;
+}
+
+.header-menu-item{
+    padding: 5px;
+	color: #F0F0F2;
+}
+
+.header-splitline{
+	border-right: 1px solid;
+	height: 40px;
+}
+
+.header-menu-item-active,
+.header-menu-item:hover{
+	background-color: #3F3F3F;
+	color: #C0C0C0;
+	text-decoration: none;
+}
+
+.section{
+	font-size: 15px;
+    padding: 10px;
+    font-family: inherit;
+    color: #A39C9C;
+}
+.content{
+	background-color: #2B2A2A;
+}
+.aside{
+	color: black;
+	text-align: center;
+	font-family: sans-serif;
+	padding: 10px;
+	font-size: 18px;
+}
+.holder{
+	background-color: #E6E6E9;
+	padding: 5px 0px 15px 15px;
+}
+.holder label{
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.submit-form{
+	background-color: #8C3C2A;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+}
+.holder span{
+	background-color: #7BA692;
+    color: white;
+    padding: 5px 8px;
+}
+.skils{
+	margin-bottom: 8px;
+}
+.body-chitcom {
+	padding: 10px;
+}
+.img-user{
+	border: 4px solid white;
+    width: 130px;
+    height: 140px;
+    border-radius: 70px;
+    margin: -17px 5px 0px -31px
+}
+.user-card{
+    margin: 30px;
+    background-color: white;
+    padding: 0;
+}
+.block-user{
+	display: flex;
+}
+.block-form{
+	margin-bottom: 20px;
+}
+.block-user h5{
+	padding: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.block-user span{
+	background-color: black;
+    color: white;
+    padding: 1px 5px 1px 5px
+}
+.block-user p{
+	padding: 0;
+    margin: 0 0px 10px 0;
+    font-size: 14px;
+    color: #8b8b8b
+}
+.icon-socials{
+	width: 25px;
+	height: 25px;
+}
+.block-socials{
+	margin: 0 0 10px 10px;
+}
+.pagination > span{
+	background-color: #7BA692;
+    color: white;
+    text-align: center;
+    padding: 5px 25px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.footer{
+	background-color: white;
+    padding: 25px;
+}
+.holder > .col-md-2{
+	margin: 14px;
+}
+.skils{
+	padding: 5px;
+	outline:none;
+	display: block;
+	background-color: #F0F0F2;
+	border: none;
+}
+.holder select{
+	width: 200px;
+    padding: 7px;
+    outline:none;
+    background-color: #F0F0F2;
+    border: none;
+}
+@media (max-width: 575.98px) {
+	.col-6{
+		margin-bottom: 20px;
+	}
+	.text-skils{
+		display: block;
+	}
+	.holder select, .search-filter{
+		width: 250px;
+	}
+	.holder > .col-md-2 {
+   		margin: 0px 0px 10px 10px;
+	}
+	.submit-form{
+		margin: 10px 0 0 55px;
+	}
+	.block-form {
+    	margin-bottom: 0px;
+	}
+	.block-user {
+		margin-left: 11px;
+	}
+	.block-user p {
+		margin: 0 0px 12px 0;
+    	font-size: 13px;
+	}
+	.pagination {
+		justify-content: center;
+		margin-left: 20px;
+	}
+	.logo-chitweb {
+		border-right: none;
+	}
+}
+@media (min-width: 768px) {
+	.holder > .col-md-2 {
+		margin: 21px;
+	}
+	.block-user h5 {
+		font-size: 15px;
+	}
+	.block-user p {
+		margin: 0 0px 15px 0;
+    	font-size: 12px;
+	}
+}
