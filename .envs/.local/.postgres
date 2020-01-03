@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=chitweb
+POSTGRES_USER=hUzLfIyycFWJwRFIkXBIIYMSrChXPMAK
+POSTGRES_PASSWORD=HNSlawXg84S9dvIR6wcNsAJGxv9JGYXgAL88nFqKjyvjCmiIFyqQEm9BQIhxKEmL
