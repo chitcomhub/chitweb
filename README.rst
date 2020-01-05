@@ -3,6 +3,9 @@ Chitcom Website
 
 Chitcom Website Alpha
 
+.. image:: https://api.travis-ci.org/chitcomhub/chitweb.svg
+     :target: https://travis-ci.org/chitcomhub/chitweb
+     :alt: Build status
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
      :target: https://github.com/ambv/black
      :alt: Black code style
