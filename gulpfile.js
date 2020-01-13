@@ -27,7 +27,6 @@ function pathsConfig(appName) {
   const vendorsRoot = 'node_modules'
 
   return {
-    
     app: this.app,
     templates: `${this.app}/templates`,
     css: `${this.app}/static/css`,
@@ -58,15 +57,13 @@ function styles() {
   return src(`${paths.sass}/project.scss`)
     .pipe(sass({
       includePaths: [
-        
         paths.sass
       ]
     }).on('error', sass.logError))
     .pipe(plumber()) // Checks for errors
     .pipe(postcss(processCss))
-    .pipe(dest(paths.css))
-    .pipe(rename({ suffix: '.min' }))
     .pipe(postcss(minifyCss)) // Minifies the result
+    .pipe(rename({ suffix: '.min' }))
     .pipe(dest(paths.css))
 }
 
@@ -133,7 +130,6 @@ function watchPaths() {
 const generateAssets = parallel(
   styles,
   scripts,
-  
   imgCompression
 )
 
