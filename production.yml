@@ -11,6 +11,7 @@ services:
       context: .
       dockerfile: ./compose/production/django/Dockerfile
     image: chitweb_production_django
+    restart: always
     depends_on:
       - postgres
       - redis
@@ -26,6 +27,7 @@ services:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
     image: chitweb_production_postgres
+    restart: always
     volumes:
       - production_postgres_data:/var/lib/postgresql/data
       - production_postgres_data_backups:/backups
@@ -53,4 +55,5 @@ services:
 
   redis:
     image: redis:5.0
+    restart: always
 
