@@ -178,6 +178,7 @@ $red: #b94a48;
 	margin: 14px;
 }
 .skils{
+  width: 200px;
 	padding: 5px;
 	outline:none;
 	display: block;
@@ -186,15 +187,108 @@ $red: #b94a48;
 }
 .holder select{
 	width: 200px;
-    padding: 7px;
-    outline:none;
-    background-color: #F0F0F2;
-    border: none;
+  padding: 7px;
+  outline:none;
+  background-color: #F0F0F2;
+  border: none;
+}
+.header_burger,.header__menu{
+  display: none;
+}
+.block-form-Search label{
+  display: block;
+}
+.submit-form {
+    margin: 0;
 }
 @media (max-width: 575.98px) {
 	.col-6{
 		margin-bottom: 20px;
 	}
+  .display-switch{
+    display: none;
+  }
+  .header_burger{
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    margin: 15px;
+    z-index: 2
+  }
+  .header_burger:before,
+  .header_burger:after{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger span{
+    position: absolute;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header_burger:before{
+    top: 0;
+  }
+  .header_burger:after{
+    bottom: 0;
+  }
+  .header__menu{
+    display: block;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #353535;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+  }
+  .header__menu.active{
+    top: 50px;
+  }
+  .header_burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active span{
+    transform: scale(0);
+  }
+  .header_burger.active:after {
+    transform:rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__link{
+    color: #fff1f1;
+    border-bottom: 1px solid #a49f9f;
+    margin-bottom: 5px;
+    border-color: hsla(0,0%,100%,.15)!important;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+    margin: 5px;
+  }
+  .header__list a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .header__list{
+    list-style: none;
+    margin: 5px;
+    padding: 6px;
+  }
+  .header-splitline{
+    border-right: none
+  }
 	.text-skils{
 		display: block;
 	}
@@ -224,6 +318,9 @@ $red: #b94a48;
 	.logo-chitweb {
 		border-right: none;
 	}
+  .logo-chitweb a {
+    margin-left: 20px;
+  }
 }
 @media (min-width: 768px) {
 	.holder > .col-md-2 {
@@ -232,8 +329,17 @@ $red: #b94a48;
 	.block-user h5 {
 		font-size: 15px;
 	}
+  .logo-chitweb a {
+    margin-left: 20px;
+  }
 	.block-user p {
 		margin: 0 0px 15px 0;
-    	font-size: 12px;
+    font-size: 12px;
 	}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pagination {
+    justify-content: center;
+    margin-left: 20px;
+  }
 }
