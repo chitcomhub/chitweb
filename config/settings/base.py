@@ -73,6 +73,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "chitweb.users.apps.UsersConfig",
+    "chitweb.specialists.apps.SpecialistsConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
