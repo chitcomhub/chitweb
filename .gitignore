@@ -279,3 +279,6 @@ chitweb/media/
 
 **/css/*.min.css
 **/js/*.min.js
+
+#Idea files
+.idea
