@@ -3,6 +3,7 @@ version: '3'
 volumes:
   local_postgres_data: {}
   local_postgres_data_backups: {}
+  media: {}
 
 services:
   django:
@@ -14,6 +15,7 @@ services:
       - postgres
     volumes:
       - .:/app
+      - media:/app/chitweb/media
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres

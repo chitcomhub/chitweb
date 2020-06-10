@@ -39,8 +39,9 @@ RUN chmod +x /start
 RUN chown django /start
 COPY --from=client-builder /app /app
 
-# We should make this dir before mounting with docker-compose, so the owner will be django
+# We should make this dirs before mounting with docker-compose, so the owner will be django
 RUN mkdir /app/staticfiles
+RUN mkdir -p /app/chitweb/media
 
 RUN chown -R django /app
 
