@@ -21,9 +21,10 @@
 			</div>
 			<div class="header-splitline align-self-center"></div>
 			<div class="col-md-4 col-6 align-self-center display-switch">
-        <!-- Todo: make header-menu-item-active depend on current page -->
-				<a href="{% url 'home' %}" class="header-menu-item header-menu-item-active">Специалисты</a>
-				<a href="{% url 'about' %}" class="header-menu-item">О нас</a>
+				{% url 'home' as url_home %}
+				<a href="{% url 'home' %}" class="header-menu-item {% if request.path == url_home %} header-menu-item-active{% endif %}">Специалисты</a>
+				{% url 'about' as url_about %}
+				<a href="{% url 'about' %}" class="header-menu-item {% if request.path == url_about %} header-menu-item-active{% endif %}">О нас</a>
 			</div>
 			<div class="header_burger">
 				<span>
