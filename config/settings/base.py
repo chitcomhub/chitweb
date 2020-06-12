@@ -267,3 +267,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
 }
+
+# running version info
+RUNNING_CHITWEB_COMMIT_HASH = env.str("CHITWEB_RUNNING_COMMIT_HASH", default = "unknown, are you running locally?")
