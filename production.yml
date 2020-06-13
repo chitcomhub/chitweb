@@ -52,6 +52,7 @@ services:
         hard: 65535
     volumes:
       - shared_static:/usr/share/nginx/html/static
+      - media:/usr/share/nginx/html/media
       - ./log:/var/log/nginx
     ports:
       - "0.0.0.0:80:80"
