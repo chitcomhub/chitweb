@@ -17,19 +17,19 @@ Build
 ::
 
   $ docker-compose -f local.yml build
-  OR: $ ./dev.sh build
+  OR: $ ./scripts/dev.sh build
 
 Run
 ::
 
   $ docker-compose -f local.yml up
-  OR: $ ./dev.sh up
+  OR: $ ./scripts/dev.sh up
 
 Run tests
 ::
 
   $ docker-compose -f local.yml run django pytest
-  OR: $ ./dev.sh pytest
+  OR: $ ./scripts/dev.sh pytest
 
 To run project locally use first 2 commands.
 

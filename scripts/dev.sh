@@ -6,17 +6,17 @@ NC='\033[0m' # No Color
 
 function help () {
     echo "Проект:"
-    printf "  ${GREEN}./dev.sh build${NC}  - собрать проект (контейнеры) через docker-compose\n"
-    printf "  ${GREEN}./dev.sh up${NC}     - поднять проект локально через docker-compose\n"
-    printf "  ${GREEN}./dev.sh down${NC}   - поднять проект локально через docker-compose\n\n"
+    printf "  ${GREEN}./scripts/dev.sh build${NC}  - собрать проект (контейнеры) через docker-compose\n"
+    printf "  ${GREEN}./scripts/dev.sh up${NC}     - поднять проект локально через docker-compose\n"
+    printf "  ${GREEN}./scripts/dev.sh down${NC}   - поднять проект локально через docker-compose\n\n"
 
     echo "Python:"
-    printf "  ${GREEN}./dev.sh pytest${NC} - запустить тесты Python\n\n"
+    printf "  ${GREEN}./scripts/dev.sh pytest${NC} - запустить тесты Python\n\n"
 
     echo "База данных:"
-    printf "  ${GREEN}./dev.sh psql${NC}   - подключиться к Postgres в интерактивном режиме\n"
-    printf "  ${GREEN}./dev.sh python manage.py migrate${NC} - миграция Django\n"
-    printf "  ${GREEN}./dev.sh python manage.py makemigrations${NC} - создать миграцию Django\n\n"
+    printf "  ${GREEN}./scripts/dev.sh psql${NC}   - подключиться к Postgres в интерактивном режиме\n"
+    printf "  ${GREEN}./scripts/dev.sh python manage.py migrate${NC} - миграция Django\n"
+    printf "  ${GREEN}./scripts/dev.sh python manage.py makemigrations${NC} - создать миграцию Django\n\n"
 }
 
 function load_pg_vars () {
