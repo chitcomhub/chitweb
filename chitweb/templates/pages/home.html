@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block breadcrumbs %}
+    {{ block.super }}/ <a style="color: white;" href="{% url 'home' %}">Cпециалисты</a>
+{% endblock %}
 {% block contentHeader %}Наши специалисты{% endblock contentHeader %}
 {% block content %}
 <div class="block-form">

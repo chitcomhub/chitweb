@@ -1,5 +1,9 @@
 {% extends "base.html" %}
+{% block breadcrumbs %}
+    {{ block.super }}/ <a style="color: white;" href="{% url 'about' %}">О нас</a>
+{% endblock %}
 {% block contentHeader %}О нас{% endblock contentHeader %}
 {% block content %}
 <p class="alert alert-info">Информацию о проекте можно получить в группе.</p>
 {% endblock content %}
+

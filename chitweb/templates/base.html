@@ -42,9 +42,10 @@
 			</nav>
 		</div>
 		<div class="row content">
-			<div class="col-md-11 section">
-        <!-- Todo: load this path dynamically -->
-				ChitWeb &rArr; Специалисты
+			<div class="col-md-11 section" style="color: white:">
+				{% block breadcrumbs %}
+					<a style="color: white;" href="/">ChitWeb</a>
+				{% endblock %}
 			</div>
 		</div>
 		<div class="row">
