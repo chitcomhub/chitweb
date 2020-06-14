@@ -20,4 +20,4 @@ class SpecialistSerializer(serializers.HyperlinkedModelSerializer):
 class SpecializationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Specialization
-        fields = ['title']
+        fields = ['id', 'title']
