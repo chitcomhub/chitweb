@@ -10,10 +10,8 @@
         <div class="row holder">
             <div class="col-md-auto col-lg-auto col-sm-auto col-11 block-form-Search">
                 <label>Cпециализация</label>
-                <select>
-                    <option>Любая</option>
-                    <option>Дизайнер</option>
-                    <option>Фронтенд</option>
+                <select id="dropdownSpecialization">
+                    <!-- JS-code is adding <option> to this dropdown with values from an API call-->
                 </select>
             </div>
             <div class="col-md-auto col-sm-auto col-lg-auto col-11 block-form-Search left-indent">
@@ -125,4 +123,7 @@
         <span>Показать еще</span>
     </div>
 </div>
+
+<script src="{% static 'js/homeDropdownSpecialization.js' %}"></script>
+
 {% endblock content %}
