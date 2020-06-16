@@ -6,6 +6,7 @@ class SpecialistSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Specialist
         fields = [
+            'id',
             'first_name',
             'last_name',
             'short_bio',
