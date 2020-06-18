@@ -171,7 +171,7 @@ TEMPLATES = [
                 "django.template.loaders.app_directories.Loader",
             ],
             'libraries': {
-                'tag_footer_date': 'chitweb.templatetags.tag_footer_date',
+                'footer_tags': 'chitweb.templatetags.footer_tags',
             },
             # https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
             "context_processors": [
