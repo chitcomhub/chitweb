@@ -11,6 +11,13 @@ class SpecialistViewSet(viewsets.ModelViewSet):
     # queryset = Specialist.objects.all().order_by('-date_joined')
     serializer_class = SpecialistSerializer
 
+    def get_queryset(self):
+        specialization_id = self.request.query_params.get('id', None)
+
+        if specialization_id:
+            return Specialist.objects.filter(id=specialization_id)
+        return Specialist.objects.all()
+
 
 class SpecializationViewSet(viewsets.ModelViewSet):
     """
