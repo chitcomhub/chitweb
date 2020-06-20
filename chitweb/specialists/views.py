@@ -12,7 +12,7 @@ class SpecialistViewSet(viewsets.ModelViewSet):
     serializer_class = SpecialistSerializer
 
     def get_queryset(self):
-        specialization_id = self.request.query_params.get('id', None)
+        specialization_id = self.request.query_params.get('specialization_id', None)
 
         if specialization_id:
             return Specialist.objects.filter(id=specialization_id)
