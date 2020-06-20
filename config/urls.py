@@ -11,7 +11,7 @@ from chitweb.specialists import views
 
 
 router = routers.DefaultRouter()
-router.register(r'specialists', views.SpecialistViewSet)
+router.register(r'specialists', views.SpecialistViewSet, 'Specialist')
 router.register(r'specializations', views.SpecializationViewSet)
 
 urlpatterns = [

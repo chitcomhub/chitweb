@@ -14,10 +14,10 @@ class Specialist(models.Model):
     short_bio = models.CharField("Описание", max_length=200, default="",)
     long_bio = models.TextField("Полное описание", blank=True, default="",)
     telegram = models.CharField("Telegram", max_length=120, default="",)
-    github = models.CharField("Github", max_length=120, default="", blank=True,)
-    photo = models.ImageField(
-        default="default-profile.png", upload_to="profile-pics", verbose_name="Фото",
-    )
+    github = models.CharField(
+        "Github", max_length=120, default="", blank=True,)
+    photo = models.ImageField(upload_to="profile-pics",
+                              verbose_name="Фото", blank=True)
     specializations = models.ManyToManyField(
         "Specialization", verbose_name="Специализации"
     )
