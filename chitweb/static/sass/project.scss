@@ -115,7 +115,7 @@ $red: #b94a48;
     color: white;
     padding: 5px 8px;
 }
-.skils{
+.skills{
 	margin-bottom: 8px;
 }
 .body-chitcom {
@@ -124,7 +124,7 @@ $red: #b94a48;
 .img-user{
 	border: 4px solid white;
     width: 130px;
-    height: 140px;
+    height: 130px;
     border-radius: 70px;
     margin: -17px 5px 0px -31px
 }
@@ -147,19 +147,21 @@ $red: #b94a48;
 .block-user span{
 	background-color: black;
     color: white;
-    padding: 1px 5px 1px 5px
+    padding: 1px 5px 1px 5px;
+  border: 2px solid white;
 }
 .block-user p{
-	padding: 0;
+	padding: 1px 10px;
     margin: 0 0px 10px 0;
     font-size: 14px;
     color: #8b8b8b
 }
-.icon-socials{
+.icon-social{
 	width: 25px;
-	height: 25px;
+  height: 25px;
+  margin-right: 5px;
 }
-.block-socials{
+.block-social{
 	margin: 0 0 10px 10px;
 }
 .pagination > span{
@@ -177,7 +179,7 @@ $red: #b94a48;
 .holder > .col-md-2{
 	margin: 14px;
 }
-.skils{
+.skills{
   width: 200px;
 	padding: 5px;
 	outline:none;
@@ -289,7 +291,7 @@ $red: #b94a48;
   .header-splitline{
     border-right: none
   }
-	.text-skils{
+	.text-skills{
 		display: block;
 	}
 	.holder select, .search-filter{
