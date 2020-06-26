@@ -13,15 +13,15 @@ class SpecialistViewSet(viewsets.ModelViewSet):
     http_method_names = ['get', 'head']
 
     def get_queryset(self):
-        specialization_id = self.request.query_params.get('specialization_id',
+        specialization_id = self.request.query_params.getlist('specialization_id',
                                                           None)
         skills_ids = self.request.query_params.getlist('skill', None)
         queryset = Specialist.objects.all()
 
         if specialization_id:
-            queryset = queryset.filter(specializations__id=specialization_id)
+            queryset = queryset.filter(specializations__id__in=specialization_id).distinct()
         if skills_ids:
-            queryset = queryset.filter(id__in=skills_ids)
+            queryset = queryset.filter(skill_id__in=skills_ids).distinct()
         for specialist in queryset:
             if specialist.photo == '':
                 specialist.photo = static('images/default-profile.png')
